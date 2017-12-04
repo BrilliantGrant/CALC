@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+	#calc-contain {
+		position: relative;
+		width: 350px;
+		border: 3px solid black;
+		background-color: black;
+
+	}
+
+	input[type=button] {
+		background: pink;
+		width: 70px;
+		font-size: 30px;
+		margin: 5px;
+		border-radius: 9px;
+	}
+	input[type=text] {
+		position: relative;
+		display: block;
+		width: 320px;
+		margin: 5px;
+		font-size: 20px;
+		height: 35px;
+	}
+	</style>
+</head>
+<body>
+	<div id="calc-contain">
+		<form name="calculator">
+		    <input type="text" name="answer">	
+		 
+		</form> 		
+	
+
+	<br>
+	<input type="button" value=" 1 " onclick="calculator.answer.value += '1'">
+	<input type="button" value=" 2 " onclick="calculator.answer.value += '2'">
+	<input type="button" value=" 3 " onclick="calculator.answer.value += '3'">
+	<input type="button" value=" + " onclick="calculator.answer.value += '+'">
+	<br>
+	<input type="button" value=" 4 " onclick="calculator.answer.value += '4'">
+	<input type="button" value=" 5 " onclick="calculator.answer.value += '5'">
+	<input type="button" value=" 6 " onclick="calculator.answer.value += '6'">
+	<input type="button" value=" - " onclick="calculator.answer.value -= '-'">
+	<br>
+	<input type="button" value=" 7 " onclick="calculator.answer.value += '7'">
+	<input type="button" value=" 8 " onclick="calculator.answer.value += '8'">
+	<input type="button" value=" 9 " onclick="calculator.answer.value += '9'">
+	<input type="button" value=" * " onclick="calculator.answer.value += '*'">
+	<br>
+	<input type="button" value=" c " onclick="calculator.answer.value = ' '">
+	<input type="button" value=" 0 " onclick="calculator.answer.value += '0'">
+	<input type="button" value=" = " onclick="calculator.answer.value = eval(calculator.answer.value)">
+	<input type="button" value=" / " onclick="calculator.answer.value += '/s'">
+
+
+</div>
+		
+	
+
+</body>
+</html>
